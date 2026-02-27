@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+<title>My Website</title>
+
+<style>
+header{
+    background:#333;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    padding:8px;
+}
+
+nav a:hover{
+    background:#555;
+    border-radius:5px;
+}
+
+nav a.active{
+    background:red;
+    border-radius:5px;
+}
+
+body{
+    font-family: Arial;
+    text-align:center;
+}
+
+form{
+    margin-top:30px;
+}
+
+input, textarea{
+    width:300px;
+    padding:8px;
+    margin:8px;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <h2>Welcome to My Lab 02</h2>
-<a href="lab02.html">Go to Lab 02 File</a>
+
+<header>
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="lab02.html">Lab 02 File</a>
+</nav>
+</header>
+
+<h1>Welcome to My Website</h1>
+
+<!-- Formspree Contact Form -->
+<form action="https://formspree.io/f/mykdvzep" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required><br>
+
+<input type="email" name="email" placeholder="Your Email" required><br>
+
+<textarea name="message" placeholder="Your Message" required></textarea><br>
+
+<button type="submit">Send Message</button>
+
+</form>
+
 </body>
 </html>
